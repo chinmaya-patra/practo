@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [parallelTesting]">
+<<<<<<< HEAD
+  <test thread-count="5" name="NewTest(failed)" parallel="methods">
+=======
+  <test thread-count="5" name="NewTest(failed)">
+    <parameter name="password" value="inspiron1545"/>
+>>>>>>> refs/heads/chinmaya-practo
+    <parameter name="url1" value="https://www.practo.com"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="url" value="https://www.facebook.com/"/>
+    <parameter name="browser1" value="ff"/>
+    <parameter name="username" value="8553690688"/>
+    <classes>
+      <class name="com.healthCareDomain.practo.testCases.LoginTest">
+        <methods>
+<<<<<<< HEAD
+          <include name="doAfterMethod"/>
+          <include name="doBeforeMethod"/>
+          <include name="test1" invocation-numbers="0"/>
+=======
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+          <include name="loginToapp001"/>
+>>>>>>> refs/heads/chinmaya-practo
+        </methods>
+      </class> <!-- com.healthCareDomain.practo.testCases.LoginTest -->
+    </classes>
+  </test> <!-- NewTest(failed) -->
+</suite> <!-- Failed suite [parallelTesting] -->
